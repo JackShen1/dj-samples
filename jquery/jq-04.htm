@@ -1,0 +1,20 @@
+<html><head><meta charset="utf-8"/></head><body>
+<a href="#" id="the-href">More</a>
+<div>
+<ul id="the-list">
+<li>First Item</li>
+</ul>
+</div>
+<script type="text/javascript" src="jquery.min.js"> </script>
+<script type="text/javascript">
+counter = 1;
+$(document).ready(function(){
+  $("#the-href").on('click', function() {
+      console.log('Clicked');
+      $('#the-list').append('<li>The counter is '+counter+'</li>');
+      counter++;
+  });
+});
+</script>
+<script type="text/javascript" src="showsource.js"></script>
+</body></html>

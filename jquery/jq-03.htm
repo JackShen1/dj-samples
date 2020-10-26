@@ -1,0 +1,22 @@
+<html><head><meta charset="utf-8"/></head><body>
+<p id="para">Where is the spinner?
+  <img id="spinner" src="spinner.gif" height="25" 
+      style="vertical-align: middle; display:none;">
+</p><p>
+<a href="#" id="tog">Toggle Spinner</a> | 
+<a href="#" id="red">Red</a> 
+</p>
+<script type="text/javascript" src="jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#tog").on('click', function() {
+    $('#spinner').toggle();
+  });
+  $("#red").on('click', function() {
+    $('#para').css('background-color', 'red');
+  });
+});
+</script>
+<script type="text/javascript" src="showsource.js"></script>
+</body></html>

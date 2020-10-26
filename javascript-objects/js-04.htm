@@ -1,0 +1,32 @@
+<html><head><meta charset="utf-8"/></head><body>
+<p>js-04.htm</p>
+<p>Please look at the source and developer console.</p>
+<!-- So once we have a template, cookie cutter, we have a class, PartyAnimal's our class. Then we can make many
+different objects. And then those objects have each independent data, that's the key to this, right? And we call this
+having multiple instances or multiple objects that implement a particular class. So here we go, here's our same old
+PartyAaimal that we've been talking about all along. The only difference now is we actually give a parameter here.
+And so one of the things that this is going to do is, as part of its construction, it is going to copy that first
+parameter into one of the instance variables. So we're going to have two instance variables, this.x and this.name.
+And we're going to copy whatever that is. Now, where does that come from? Well, it comes from the moment of construction
+when we're saying make me a new PartyAnimal. And here's a constructor parameter. So that Sally goes in as nam, so
+this.name equals Sally. -->
+<script type="text/javascript">
+function PartyAnimal(nam) {
+    this.x = 0;
+    this.name = nam;
+    console.log("Built "+nam);
+    this.party = function () {
+        this.x = this.x + 1;
+        console.log(nam+"="+this.x);
+    }
+}
+s = new PartyAnimal("Sally");
+s.party();
+
+j = new PartyAnimal("Jim");
+j.party();
+s.party();
+</script>
+
+<script type="text/javascript" src="showsource.js"></script>
+</body></html>

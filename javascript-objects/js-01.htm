@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+</head>
+<body>
+<p>js-01.htm</p>
+<p>Please look at the source and developer console.</p>
+<!-- And so the first thing to notice is that it uses function as the keyword to define a class. Now, you might see
+what's called ES6 classes, and it's a syntactic sugar that layers on top of this that makes the syntax look more like
+the other languages. And so this is kind of like vanilla, the underlying actually how they work. And so I guess I'm glad
+that they've made syntax that looks like everything else. But it really belies the elegance of the original way it works
+The syntax doesn't change how it works, this is how it really works. And the things that's super excellent about this is
+that it uses the function keyword, there's not a different keyword, okay? Every other programming language pretty much
+when they go into an object, they use a different than they're in their procedural. So a class is a specialized function
+that, as a side effect of its execution, returns code and data, okay? Now we'll see that we invoke it a little bit
+differently. So let's start and take a look at what we've got here. We've got this function PartyAnimal, right?
+So PartyAnimal is the name of the class, but it's code. And again, we have a curly brace to start it. And the thing
+that's different is there's this notion of this. So we make sort of an empty vessel that is going to be the object that
+we're going to use this class to populate. And then by running the code, we're actually populating that empty vessel.
+So this.x is going to create a member variable called x inside this. Which is the empty vessel object that we're
+creating and then we're going to fill up, okay? And then we have this.party. this.party is also a piece of data in the
+this object that we're about to create. And you'll notice that we're saying equals and then function. But this one is a
+little different. You notice the function is unnamed, it is what we call an anonymous function, because it doesn't have
+a name. So the function's name is actually called party. But it just happens to be called party because we're storing
+the functions code in a instance variable called party. But that's how we're going to call it. So in the party variable
+we have the code that is those two lines. And then within that method, now I'd call party a method and use the
+terminology. Within the party method, this is the instance that we're talking about. In Python, we use self for this,
+right? And different languages have this concept of the current object that we're part of. this.x is referencing,
+remember how we talked about global and local inside of functions? Well, this x is actually outside of the function.
+So this is an advantage that this.x is defined inside the function. And because this is defined before the function
+definition, it sees that, right? And so we're going to add 1 to that member variable. And then we're going to put out
+a console log message, and that's our entire object. Its got one attribute called x and one method called party, okay?
+So we could just call this this function PartyAnimal, but that's not what we do. We have a new keyword called new, and
+it says look, don't just run this code. Create an empty object, and then use the PartyAnimal code to sort of fill out
+that with a bit of code in a bit of data. And so that says run all this, but instead of just running it, give me back
+the thing that eventually it produces. It's as if there's a return statement at the bottom of the thing, at the bottom
+of PartyAnimal function. And then give me back the object, and now I have an object. And it's got an x in it and it's
+got a party in it. Then an is where I store that object, so an is my first instance of a PartyAnimal object. But now I
+can talk to an.party and called again and again, so I call an.party three times. So I call the method party, okay? So
+that is the basic mechanism. -->
+<script type="text/javascript">
+function PartyAnimal() {
+    this.x = 0;
+    this.party = function () {
+        this.x = this.x + 1;
+        console.log("So far "+this.x);
+    }
+}
+an = new PartyAnimal();
+an.party();
+an.party();
+an.party();
+</script>
+
+<script type="text/javascript" src="showsource.js"></script>
+</body></html>
