@@ -2,9 +2,11 @@ Django>=3.1
 django-crispy-forms>=1.9.2
 django-filter==2.3.0
 djangorestframework>=3.11.1
+django-extensions>=3.0.5
 Markdown==3.0.1
 social-auth-app-django>=3.1.0
 social-auth-core>=3.3.3
-django-extensions>=3.0.5
 psycopg2==2.8.6
 whitenoise==5.2.0
+dj-database-url==0.4.1
+gunicorn==19.6.0
