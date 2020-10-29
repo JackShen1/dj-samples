@@ -1,33 +1,397 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d1329ff9-d66a-4cf3-86e3-ab4738e999a0" name="Default Changelist" comment="" />
+    <list default="true" id="d1329ff9-d66a-4cf3-86e3-ab4738e999a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/humanize.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/humanize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/ad_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/ad_confirm_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/ad_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/ad_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/ad_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/ad_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/templates/ads/base_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/ads/templates/ads/base_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ads/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ads/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/auto_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/auto_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/auto_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/make_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/make_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/templates/autos/make_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/autos/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookmany/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookone/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/breed_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/breed_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/breed_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/cat_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/cat_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/templates/cats/cat_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cats/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/static/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/templates/chat/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/templates/chat/syntax.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/templates/chat/talk.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/templates/crispy/awesome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/templates/crispy/boring.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/templates/crispy/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crispy/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/templates/favs/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/templates/favs/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/templates/favs/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/templates/favs/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favs/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/templates/forums/comment_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/templates/forums/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/templates/forums/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/templates/forums/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/templates/forums/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/forums/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/base_bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base_bootstrap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/registration/login_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/registration/login_social.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-01.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-03.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-04.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-05.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-06.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-07.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-08.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/js-09.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript-objects/showsource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-01.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-02.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-03.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-04.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-05.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-06.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-07.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-08.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-09.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-10.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-11.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-12.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-13.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-14.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-15.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-16.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-17.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-18.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/js-19.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/showsource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/dom-01.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/dom-02.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/dom-03.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jq-01.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jq-02.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jq-03.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jq-04.htm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/showsource.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jquery/spinner.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/load.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/migrations/0002_auto_20200827_1630.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/many/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/menu/base_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/templates/menu/main_menu.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/owner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/templates/myarts/article_confirm_delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/templates/myarts/article_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/templates/myarts/article_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/templates/myarts/article_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myarts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/humanize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/templates/pics/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/templates/pics/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/templates/pics/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/templates/pics/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pics/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/templates/polls/results.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/polls/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/many_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/templates/well/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/templates/well/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/templates/well/form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/templates/well/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/well/views.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="3af9b380-439c-4aaa-866b-8c9c475b0a15" />
   <component name="ProjectId" id="1jQIcUxmuZlMfyD9fiJzMZEe4QE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/home/static" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\home\static" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\whirlpool\templates\whirlpool" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\whirlpool\static" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\spirals\templates\spirals" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\spirals\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\home\static" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\whirlpool" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\spirals" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\phoenix" />
+      <recent name="C:\Users\johnb\Desktop\MyProjects\dj-samples\neon" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.dj-samples">
+    <configuration name="Test: core.tests.test_api" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="dj-samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="core.tests.test_api" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: core.tests.test_api.MessageApiTestCase.test_read_message" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="dj-samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="core.tests.test_api.MessageApiTestCase.test_read_message" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: core.tests.test_model" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="dj-samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="core.tests.test_model" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="unesco_load" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dj-samples" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/unesco_load.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="dj-samples" type="Python.DjangoServer" factoryName="Django server">
       <module name="dj-samples" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="mysite.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -45,6 +409,14 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: core.tests.test_model" />
+        <item itemvalue="Django tests.Test: core.tests.test_api.MessageApiTestCase.test_read_message" />
+        <item itemvalue="Django tests.Test: core.tests.test_api" />
+        <item itemvalue="Python.unesco_load" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -54,11 +426,73 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603729970353</updated>
-      <workItem from="1603729972271" duration="734000" />
+      <workItem from="1603729972271" duration="735000" />
+      <workItem from="1603787054406" duration="112000" />
+      <workItem from="1603787169275" duration="3834000" />
+      <workItem from="1603810815313" duration="2488000" />
+      <workItem from="1603909817636" duration="17779000" />
+      <workItem from="1603964259063" duration="21247000" />
+      <workItem from="1603986418188" duration="4574000" />
+      <workItem from="1603991031175" duration="1378000" />
+      <workItem from="1603992851423" duration="2825000" />
+      <workItem from="1603995710309" duration="4785000" />
+      <workItem from="1604000654485" duration="321000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="505" y="214" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1603995882250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="505" y="214" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1603995882250" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1603992990673">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1603992990673" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1603969913536">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1603969913536" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1603787163947">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603787163947" />
+    <state width="1537" height="217" key="GridCell.Tab.0.bottom" timestamp="1604000628140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="217" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604000628140" />
+    <state width="1537" height="217" key="GridCell.Tab.0.center" timestamp="1604000628140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="217" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604000628140" />
+    <state width="1537" height="217" key="GridCell.Tab.0.left" timestamp="1604000628140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="217" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604000628140" />
+    <state width="1537" height="217" key="GridCell.Tab.0.right" timestamp="1604000628140">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1537" height="217" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604000628140" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1603970223340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603970223340" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603970223340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1603970223340" />
+    <state x="862" y="116" width="579" height="592" key="find.popup" timestamp="1603966909903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="862" y="116" width="579" height="592" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1603966909903" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dj_samples$Test__core_tests_test_api.coverage" NAME="Test: core.tests.test_api Coverage Results" MODIFIED="1603979094232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/dj_samples$Test__core_tests_test_model.coverage" NAME="Test: core.tests.test_model Coverage Results" MODIFIED="1603979186502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/dj_samples$Test__core_tests_test_api_MessageApiTestCase_test_read_message.coverage" NAME="Test: core.tests.test_api.MessageApiTestCase.test_read_message Coverage Results" MODIFIED="1603979141591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/dj_samples$unesco_load.coverage" NAME="unesco_load Coverage Results" MODIFIED="1603919145368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
   </component>
 </project>

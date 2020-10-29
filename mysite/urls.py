@@ -10,28 +10,28 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE_ROOT = os.path.join(BASE_DIR, 'site')
 
 urlpatterns = [
-    path('', include('ads.urls')),  # Change to ads.urls
+    path('', include('home.urls')),
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),
-    url(r'^oauth/', include('social_django.urls', namespace='social')),  # Keep
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
 
     # Sample applications
     path('ads/', include('ads.urls')),
-    path('polls/', include('polls.urls')),
-    path('hello/', include('hello.urls')),
     path('authz/', include('authz.urls')),
-    path('autos/', include('autos.urls')),
-    path('cats/', include('cats.urls')),
-    path('crispy/', include('crispy.urls')),
-    path('myarts/', include('myarts.urls')),
-    path('menu/', include('menu.urls')),
-    path('pics/', include('pics.urls')),
     path('chat/', include('chat.urls')),
 
-    url(r'^site/(?P<path>.*)$', serve,
-        {'document_root': SITE_ROOT, 'show_indexes': True},
-        name='site_path'
-    ),
+    path('concentus/', include('concentus.urls')),
+    path('constellation/', include('constellation.urls')),
+    path('expressionism/', include('expressionism.urls')),
+    path('expressionism2/', include('expressionism2.urls')),
+    path('fractal/', include('fractal.urls')),
+    path('galaxy/', include('galaxy.urls')),
+    path('heartverse/', include('heartverse.urls')),
+    path('infinity/', include('infinity.urls')),
+    path('neon/', include('neon.urls')),
+    path('phoenix/', include('phoenix.urls')),
+    path('spirals/', include('spirals.urls')),
+    path('whirlpool/', include('whirlpool.urls')),
 ]
 
 # Serve the favicon

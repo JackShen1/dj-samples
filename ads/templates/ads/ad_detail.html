@@ -1,6 +1,6 @@
 {% extends 'ads/base_menu.html' %}
 {% block title %}{{ settings.APP_NAME }}{% endblock %}
-{% load humanize %} <!-- https://docs.djangoproject.com/en/3.0/ref/contrib/humanize -->
+{% load humanize %}
 
 {% block head %}
 <style>
@@ -12,7 +12,7 @@
   height: 100%;
   z-index: 10;
   display: none;
-  background-color: rgba(0,0,0,0.5); /*dim the background*/
+  background-color: rgba(0,0,0,0.5);
 }
 </style>
 {% endblock %}

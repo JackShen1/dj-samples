@@ -6,16 +6,16 @@
     <div class="navbar-header">
         <a class="navbar-brand" href="/">{{ settings.APP_NAME }}</a>
     </div>
-    <!-- https://stackoverflow.com/questions/22047251/django-dynamically-get-view-url-and-check-if-its-the-current-page -->
+
     <ul class="nav navbar-nav">
       {% url 'ads' as ads %}
       <li {% if request.get_full_path == ads %}class="active"{% endif %}>
-          <a href="{% url 'ads:all' %}">Ads</a></li>
+          <a href="{% url 'ads:all' %}">Posts</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         {% if user.is_authenticated %}
         <li>
-        <a href="{% url 'ads:ad_create' %}">Create Ad</a>
+        <a href="{% url 'ads:ad_create' %}">Create Post</a>
         </li>
         <li class="dropdown">
             <a href="#" data-toggle="dropdown" class="dropdown-toggle">

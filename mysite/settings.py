@@ -5,12 +5,11 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # Used for a default title
-APP_NAME = 'ChucksList'
+APP_NAME = 'JackShen Engineering'
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'mvpxxdk1_bzoyg*@rnf&5zi2^sts9v$0wvia&*r%jxvl)7gnlq'
@@ -20,8 +19,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'mvpxxdk1_bzoyg*@rnf&5zi2^sts9v
 # DEBUG = False
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = [ '*' ]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -38,24 +36,27 @@ INSTALLED_APPS = [
     'crispy_forms',
     'social_django',
     'home.apps.HomeConfig',
+    'rest_framework',
+    'channels',
 
     # Sample Applications
-    'polls.apps.PollsConfig',
-    'hello.apps.HelloConfig',
     'authz.apps.AuthzConfig',
-    'autos.apps.AutosConfig',
-    'bookone.apps.BookoneConfig',
-    'bookmany.apps.BookmanyConfig',
-    'cats.apps.CatsConfig',
-    'crispy.apps.CrispyConfig',
-    'many.apps.ManyConfig',
-    'myarts.apps.MyartsConfig',
-    'menu.apps.MenuConfig',
     'ads.apps.AdsConfig',
-    'pics.apps.PicsConfig',
-    'chat.apps.ChatConfig',
     'unesco.apps.UnescoConfig',
-    'well.apps.WellConfig',
+    'chat.apps.ChatConfig',
+
+    'concentus.apps.ConcentusConfig',
+    'constellation.apps.ConstellationConfig',
+    'expressionism.apps.ExpressionismConfig',
+    'expressionism2.apps.Expressionism2Config',
+    'fractal.apps.FractalConfig',
+    'galaxy.apps.GalaxyConfig',
+    'heartverse.apps.HeartverseConfig',
+    'infinity.apps.InfinityConfig',
+    'neon.apps.NeonConfig',
+    'phoenix.apps.PhoenixConfig',
+    'spirals.apps.SpiralsConfig',
+    'whirlpool.apps.WhirlpoolConfig',
 ]
 
 # When we get to crispy forms
@@ -63,7 +64,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-	'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -96,7 +97,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -106,7 +106,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -126,9 +125,26 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated'
+    ],
+    'DEFAULT_PAGINATION_CLASS':
+        'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100
+}
+
+MESSAGES_TO_LOAD = 15
+
+# In settings.py
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "asgiref.inmemory.ChannelLayer",
+        "ROUTING": "chat.routing.channel_routing",
+    },
+}
 
 LANGUAGE_CODE = 'en-us'
 
@@ -140,7 +156,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -149,6 +164,7 @@ STATIC_URL = '/static/'
 # Configure the social login
 try:
     from . import github_settings
+
     SOCIAL_AUTH_GITHUB_KEY = github_settings.SOCIAL_AUTH_GITHUB_KEY
     SOCIAL_AUTH_GITHUB_SECRET = github_settings.SOCIAL_AUTH_GITHUB_SECRET
 except:
@@ -186,3 +202,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+ASGI_APPLICATION = 'mysite.routing.application'
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}

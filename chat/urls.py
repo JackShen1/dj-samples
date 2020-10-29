@@ -1,26 +1,16 @@
-import os
-from django.urls import path
-from django.conf.urls import url
-from django.views.static import serve
-from . import views
+from django.urls import path, include
 from django.views.generic import TemplateView
+from django.contrib.auth.decorators import login_required
+from rest_framework.routers import DefaultRouter
+from chat.api import MessageModelViewSet, UserModelViewSet
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+router = DefaultRouter()
+router.register(r'message', MessageModelViewSet, basename='message-api')
+router.register(r'user', UserModelViewSet, basename='user-api')
 
-app_name='chat'
 urlpatterns = [
-    path('', views.HomeView.as_view(), name='main'),
-    path('syntax', TemplateView.as_view(template_name='chat/syntax.html'), 
-        name='syntax'),
-    path('jsonfun', views.jsonfun, name='jsonfun'),
+    path(r'api/v1/', include(router.urls)),
 
-    path('talk', views.TalkMain.as_view(), name='talk'),
-    path('messages', views.TalkMessages.as_view(), name='messages'),
-
-    # Serve up a local static folder to serve spinner.gif
-    url(r'^static/(?P<path>.*)$', serve,
-        {'document_root': os.path.join(BASE_DIR, 'static'), 'show_indexes': True},
-        name='static'
-    )
+    path('', login_required(
+        TemplateView.as_view(template_name='chat/chat.html')), name='home'),
 ]
-

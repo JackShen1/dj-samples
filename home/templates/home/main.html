@@ -1,11 +1,357 @@
-<html>
+{% load static %}
+{% load app_tags %}
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <title>{{ settings.APP_NAME }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JackShen Engineering</title>
+    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet"  href="{% static 'main_style.css' %}">
 </head>
+
 <body>
-    <h1>Welcome to {{ settings.APP_NAME }}</h1>
-    <p>
-    Hello world.
-    </p>
+<nav class="main-nav">
+
+    <div class="heading">
+        <div class="logo">
+            <a href="/" target="_self" rel="nofollow" title="JackShen Engineering" class="logo-link">JackShen Engineering</a>
+        </div>
+        <button id="toggle-nav">
+            menu
+        </button>
+    </div>
+
+    <ul class="menu">
+        <li class="menu-item">
+            <a class="menu-item-link" href="ads" target="_blank">Blog</a>
+        </li>
+
+        <li class="menu-item">
+            <a class="menu-item-link" href="chat" target="_blank">Chat</a>
+        </li>
+
+        <li class="menu-item menu-item-dropdown">
+            <span class="menu-item-link">Portfolio</span>
+            <ul class="sub-menu">
+                <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="/">Resume</a>
+                </li>
+                <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="">Sub Item two</a>
+                </li>
+                <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="">Sub Item three</a>
+                </li>
+                <li class="sub-menu-item">
+                    <a class="sub-menu-item-link" href="">Sub Item four</a>
+                </li>
+            </ul>
+        </li>
+
+        <li class="menu-item">
+            {% if user.is_authenticated %}
+                <a class="menu-item-link" href="/">
+                    {{ user.username }}
+                    <img style="width: 20px; border-radius: 60%; margin-bottom: -4px; margin-left: 5px;" src="{{ user|gravatar:60 }}" alt="avatar"/>
+                    <b class="caret"></b>
+                </a>
+            {% endif %}
+        </li>
+
+        <li class="menu-item">
+            {% if user.is_authenticated %}
+                <a class="menu-item-link" href="{% url 'logout' %}">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Log Out
+                </a>
+            {% else %}
+                <a class="menu-item-link" href="{% url 'login' %}">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                    Log In
+                </a>
+            {% endif %}
+        </li>
+
+        <li class="menu-item">
+            <a class="menu-item-link" href=""></a>
+            <div class='options'>
+                <button class='dark'></button>
+                <button class='light'></button>
+            </div>
+        </li>
+    </ul>
+</nav>
+
+<div class='container'>
+    <header>
+        <h1>Welcome to JackShen World!</h1>
+        <p>
+            Some of my old and new projects on Django, as well as web design and web animation using HTML + CSS + JS
+        </p>
+    </header>
+
+    <main>
+        <div class='items'>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="concentus" target="_blank">
+                        <defs>
+                            <clipPath id='clip-0'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Concentus
+                        </text>
+                        <g clip-path='url(#clip-0)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/7xhto00.png?1'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Concentus
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="constellation" target="_blank">
+                        <defs>
+                            <clipPath id='clip-1'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Constellation
+                        </text>
+                        <g clip-path='url(#clip-1)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/gM4qqYv.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Constellation
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="expressionism" target="_blank">
+                        <defs>
+                            <clipPath id='clip-2'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Expressionism
+                        </text>
+                        <g clip-path='url(#clip-2)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/aXwiXiE.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Expressionism
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="expressionism2" target="_blank">
+                        <defs>
+                            <clipPath id='clip-3'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Expressionism II
+                        </text>
+                        <g clip-path='url(#clip-3)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/8NgBkBz.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Expressionism II
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="fractal" target="_blank">
+                        <defs>
+                            <clipPath id='clip-4'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Fractal Zoom
+                        </text>
+                        <g clip-path='url(#clip-4)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/QzW6Tlk.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Fractal Zoom
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="galaxy" target="_blank">
+                        <defs>
+                            <clipPath id='clip-5'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Galaxy
+                        </text>
+                        <g clip-path='url(#clip-5)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/oIQKBtR.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Galaxy
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="heartverse" target="_blank">
+                        <defs>
+                            <clipPath id='clip-6'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Heartverse
+                        </text>
+                        <g clip-path='url(#clip-6)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/5nHtI0z.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Heartverse
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="infinity" target="_blank">
+                        <defs>
+                            <clipPath id='clip-7'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Infinity
+                        </text>
+                        <g clip-path='url(#clip-7)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/vNqWa6S.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Infinity
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="neon" target="_blank">
+                        <defs>
+                            <clipPath id='clip-8'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Neon Heart
+                        </text>
+                        <g clip-path='url(#clip-8)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/ilKn1l6.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Neon Heart
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="phoenix" target="_blank">
+                        <defs>
+                            <clipPath id='clip-9'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Phoenix
+                        </text>
+                        <g clip-path='url(#clip-9)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/XWXiOu0.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Phoenix
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="spirals" target="_blank">
+                        <defs>
+                            <clipPath id='clip-10'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Spirals (Fractal) Symphony
+                        </text>
+                        <g clip-path='url(#clip-10)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/APpcZlD.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Spirals (Fractal) Symphony
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+
+            <div class='item'>
+                <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+                    <a href="whirlpool" target="_blank">
+                        <defs>
+                            <clipPath id='clip-11'>
+                                <circle cx='0' cy='0' fill='#000' r='150px'></circle>
+                            </clipPath>
+                        </defs>
+                        <text class='svg-text' dy='.3em' x='50%' y='50%'>
+                            Whirlpool
+                        </text>
+                        <g clip-path='url(#clip-11)'>
+                            <image height='100%' preserveAspectRatio='xMinYMin slice' width='100%' xlink:href='https://i.imgur.com/Mf4gtHM.png'></image>
+                            <text class='svg-masked-text' dy='.3em' x='50%' y='50%'>
+                                Whirlpool
+                            </text>
+                        </g>
+                    </a>
+                </svg>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="{% static 'main_script.js' %}"></script>
+
 </body>
 </html>

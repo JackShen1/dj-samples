@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Toy Chat Application">
+    <title>{% block title %}JackShen ChatApp{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+
+{% include 'header.html' %}
+
+{% block main %}
+{% endblock %}
+
+</body>
+</html>

@@ -16,27 +16,22 @@ from django.utils.decorators import method_decorator
 from django.db.utils import IntegrityError
 from django.contrib.humanize.templatetags.humanize import naturaltime
 
-from well.utils import dump_queries
+from ads.utils import dump_queries
 from django.db.models import Q
 
 
-class AdListView(View):
+class AdListView(LoginRequiredMixin, View):
     template_name = "ads/ad_list.html"
 
     def get(self, request):
         strval = request.GET.get("search", False)
         if strval:
-            # Simple title-only search
-            # objects = Post.objects.filter(title__contains=strval).select_related().order_by('-updated_at')[:10]
-
             # Multi-field search
             query = Q(title__contains=strval)
             query.add(Q(text__contains=strval), Q.OR)
             objects = Ad.objects.filter(query).select_related().order_by('-updated_at')[:10]
         else:
-            # try both versions with > 4 posts and watch the queries that happen
             objects = Ad.objects.all().order_by('-updated_at')[:10]
-            # objects = Post.objects.select_related().all().order_by('-updated_at')[:10]
 
         # Augment the post_list
         for obj in objects:
@@ -44,9 +39,7 @@ class AdListView(View):
 
         favorites = list()
         if request.user.is_authenticated:
-            # rows = [{'id': 2}, {'id': 4} ... ]  (A list of rows)
             rows = request.user.favorite_ads.values('id')
-            # favorites = [2, 4, ...] using list comprehension
             favorites = [row['id'] for row in rows]
 
         ctx = {'ad_list': objects, 'search': strval, 'favorites': favorites}
