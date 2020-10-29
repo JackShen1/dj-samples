@@ -1,5 +1,5 @@
-SOCIAL_AUTH_GITHUB_KEY = 'e3537a38477bc1442791'
-SOCIAL_AUTH_GITHUB_SECRET = 'c00a51187b182646855f44ebdfaeb9d8ffc87e2b'
+SOCIAL_AUTH_GITHUB_KEY = '3d6ca1bf811b76162baf'
+SOCIAL_AUTH_GITHUB_SECRET = 'ba3608499ae29ee365c902cd4b4b8581588cb3a5'
 
 # Copy this file to github_settings.py (don't check it into github)
 
