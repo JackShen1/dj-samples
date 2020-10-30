@@ -107,6 +107,3 @@ $(document).ready(function () {
         getMessageById(e.data);
     };
 });
-
-
-
