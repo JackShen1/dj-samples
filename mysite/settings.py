@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     # Sample Applications
     'authz.apps.AuthzConfig',
     'ads.apps.AdsConfig',
-    'unesco.apps.UnescoConfig',
     'chat.apps.ChatConfig',
 
     'concentus.apps.ConcentusConfig',
