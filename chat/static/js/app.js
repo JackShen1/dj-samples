@@ -89,7 +89,7 @@ $(document).ready(function () {
     updateUserList();
     disableInput();
 
-    let socket = new WebSocket('wss://' + window.location.host + '/wss?session_key=${sessionKey}')
+    let socket = new WebSocket('wss://' + window.location.host)
 
     chatInput.keypress(function (e) {
         if (e.keyCode === 13)
