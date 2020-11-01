@@ -106,6 +106,7 @@ $(document).ready(function () {
     });
 
     socket.onmessage = function (e) {
+        getConversation(currentRecipient);
         getMessageById(e.data);
         getConversation(currentRecipient);
     };
