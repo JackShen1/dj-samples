@@ -34,7 +34,6 @@ function drawMessage(message) {
                 </div>
             </li>`;
     $(messageItem).appendTo('#messages');
-    getConversation(currentRecipient);
 }
 
 function getConversation(recipient) {
