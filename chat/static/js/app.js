@@ -98,8 +98,8 @@ $(document).ready(function () {
 
     chatButton.click(function () {
         if (chatInput.val().length > 0) {
-            sendMessage(currentRecipient, chatInput.val());
             getConversation(currentRecipient);
+            sendMessage(currentRecipient, chatInput.val());
             chatInput.val('');
         }
     });
