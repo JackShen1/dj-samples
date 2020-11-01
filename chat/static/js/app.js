@@ -89,7 +89,7 @@ $(document).ready(function () {
     updateUserList();
     disableInput();
 
-    let socket = new WebSocket('wss://' + window.location.host + '/ws?session_key=${sessionKey}')
+    let socket = new WebSocket('wss://' + window.location.host + '/wss?session_key=${sessionKey}')
 
     chatInput.keypress(function (e) {
         if (e.keyCode === 13)
@@ -99,6 +99,7 @@ $(document).ready(function () {
     chatButton.click(function () {
         if (chatInput.val().length > 0) {
             sendMessage(currentRecipient, chatInput.val());
+            $('#messages').load(document.URL +  ' #messages');
             chatInput.val('');
         }
     });
