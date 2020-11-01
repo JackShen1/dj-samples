@@ -34,7 +34,6 @@ function drawMessage(message) {
                 </div>
             </li>`;
     $(messageItem).appendTo('#messages');
-    $('#messages').load(document.URL +  ' #messages');
 }
 
 function getConversation(recipient) {
@@ -108,5 +107,6 @@ $(document).ready(function () {
 
     socket.onmessage = function (e) {
         getMessageById(e.data);
+        getConversation(currentRecipient);
     };
 });
