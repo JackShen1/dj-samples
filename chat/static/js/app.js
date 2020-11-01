@@ -34,6 +34,7 @@ function drawMessage(message) {
                 </div>
             </li>`;
     $(messageItem).appendTo('#messages');
+    $('#messages').load(document.URL +  ' #messages');
 }
 
 function getConversation(recipient) {
