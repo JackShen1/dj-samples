@@ -100,6 +100,7 @@ $(document).ready(function () {
         if (chatInput.val().length > 0) {
             getConversation(currentRecipient);
             sendMessage(currentRecipient, chatInput.val());
+            getConversation(currentRecipient);
             chatInput.val('');
         }
     });
