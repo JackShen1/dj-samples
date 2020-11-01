@@ -99,7 +99,7 @@ $(document).ready(function () {
     chatButton.click(function () {
         if (chatInput.val().length > 0) {
             sendMessage(currentRecipient, chatInput.val());
-            $('#msg').load(document.URL +  ' #msg');
+            getConversation(currentRecipient);
             chatInput.val('');
         }
     });
