@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Cryptography</title>
+    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'caesar.css' %}">
+</head>
+<body>
+<div class="terminal">
+   <div class="overlay"></div>
+   <h1>CRYPTOGRAPHY</h1>
+   <div class="container">
+      <div id="left">
+         <div>
+            <h3>Cryptography Algorithms</h3>
+            <label for="input">Enter Data To Encrypt Or Decrypt:</label>
+            <div class="console-input">
+               <label for="input">></label>
+               <input type="text" id="input">
+            </div>
+            <div id="shift-input-div">
+               <label for="shift-input">Enter Shift Value:</label>
+               <div class="console-input">
+                  <label for="shift-input">></label>
+                  <input type="text" id="shift-input">
+               </div>
+            </div>
+            <label for="algorithm-option">Select an algorithm:</label>
+            <select id="algorithm-option">
+						<option value="caeser" selected="true">Caesar Algorithm</option>
+						<option value="atbash">Atbash Algorithm</option>
+					</select>
+            <div class="buttons">
+               <button id="encrypt-btn">Encrypt</button>
+               <button id="decrypt-btn">Decrypt</button>
+            </div>
+         </div>
+      </div>
+      <div id="right">
+         <div id="output">
+            OUTPUT
+         </div>
+      </div>
+   </div>
+</div>
+
+<script src='{% static 'caesar.js' %}'></script>
+
+</body>
+</html>

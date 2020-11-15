@@ -20,8 +20,10 @@ urlpatterns = [
     path('authz/', include('authz.urls')),
     path('chat/', include('chat.urls')),
 
+    path('caesar/', include('caesar.urls')),
     path('concentus/', include('concentus.urls')),
     path('constellation/', include('constellation.urls')),
+    path('essay/', include('essay.urls')),
     path('expressionism/', include('expressionism.urls')),
     path('expressionism2/', include('expressionism2.urls')),
     path('fractal/', include('fractal.urls')),
@@ -30,6 +32,7 @@ urlpatterns = [
     path('infinity/', include('infinity.urls')),
     path('neon/', include('neon.urls')),
     path('phoenix/', include('phoenix.urls')),
+    path('security/', include('security.urls')),
     path('spirals/', include('spirals.urls')),
     path('whirlpool/', include('whirlpool.urls')),
 ]
