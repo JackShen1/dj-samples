@@ -2,25 +2,17 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7YQ41BW3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GC7YQ41BW3');
-    </script>
     <meta charset="UTF-8">
     <title>Expressionism</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'expressionism.css' %}">
 </head>
 
 <body>
 <div id="container"></div>
 
-<script src="{% static 'three.min.js' %}"></script>
+<script src="{% static 'libs/three.min.js' %}"></script>
 
 <script id="vertexShader" type="x-shader/x-vertex">
     void main() {

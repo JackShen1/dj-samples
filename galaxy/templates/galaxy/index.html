@@ -2,19 +2,11 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7YQ41BW3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GC7YQ41BW3');
-    </script>
     <meta charset="UTF-8">
     <title>Galaxy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css"> audio { display:none;} </style>
-    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'galaxy.css' %}">
 </head>
 
@@ -27,12 +19,12 @@
 </audio>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js'></script>
-<script src='{% static 'PCDLoader.js' %}'></script>
-<script src='{% static 'OrbitControls.js' %}'></script>
-<script src='{% static 'OBJExporter.js' %}'></script>
-<script src='{% static 'STLExporter.js' %}'></script>
-<script src='{% static 'dat.gui.min.js' %}'></script>
-<script src='{% static 'jquery.min.js' %}'></script>
+<script src='{% static 'libs/PCDLoader.js' %}'></script>
+<script src='{% static 'libs/OrbitControls.js' %}'></script>
+<script src='{% static 'libs/OBJExporter.js' %}'></script>
+<script src='{% static 'libs/STLExporter.js' %}'></script>
+<script src='{% static 'libs/dat.gui.min.js' %}'></script>
+<script src='{% static 'libs/jquery.min.js' %}'></script>
 <script>
     setInterval(function () {
         let audio = $('.song')[0];

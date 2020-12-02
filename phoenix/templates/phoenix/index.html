@@ -2,23 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7YQ41BW3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GC7YQ41BW3');
-    </script>
     <meta charset="UTF-8">
     <title>Phoenix</title>
-    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
-    <link rel="stylesheet" href="{% static 'reset.min.css' %}">
+    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'libs/reset.min.css' %}">
     <link rel="stylesheet" href="{% static 'phoenix.css' %}">
 </head>
 
 <body>
-<script src='{% static 'gsap.min.js' %}'></script>
+<script src='{% static 'libs/gsap.min.js' %}'></script>
 <script type="module">
     import * as $ from 'https://unpkg.com/three@0.118.1/build/three.module.js'
     import { OrbitControls } from 'https://unpkg.com/three@0.118.1/examples/jsm/controls/OrbitControls.js'

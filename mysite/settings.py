@@ -44,10 +44,8 @@ INSTALLED_APPS = [
     'ads.apps.AdsConfig',
     'chat.apps.ChatConfig',
 
-    'caesar.apps.CaesarConfig',
     'concentus.apps.ConcentusConfig',
     'constellation.apps.ConstellationConfig',
-    'essay.apps.EssayConfig',
     'expressionism.apps.ExpressionismConfig',
     'expressionism2.apps.Expressionism2Config',
     'fractal.apps.FractalConfig',
@@ -56,7 +54,6 @@ INSTALLED_APPS = [
     'infinity.apps.InfinityConfig',
     'neon.apps.NeonConfig',
     'phoenix.apps.PhoenixConfig',
-    'security.apps.SecurityConfig',
     'spirals.apps.SpiralsConfig',
     'whirlpool.apps.WhirlpoolConfig',
 ]

@@ -2,18 +2,10 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7YQ41BW3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GC7YQ41BW3');
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Constellation</title>
-    <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'constellation.css' %}">
 </head>
 
@@ -21,7 +13,7 @@
 <div id="title">Click to Regenerate</div>
 <div id="3d-graph"></div>
 
-<script src='{% static '3d-force-graph.min.js' %}'></script>
+<script src='{% static 'libs/3d-force-graph.min.js' %}'></script>
 <script type="module">
     import { UnrealBloomPass } from '//unpkg.com/three/examples/jsm/postprocessing/UnrealBloomPass.js';
     const deg2rad = deg => { return deg * Math.PI / 180; };

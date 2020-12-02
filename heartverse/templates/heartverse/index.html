@@ -2,18 +2,10 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GC7YQ41BW3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-GC7YQ41BW3');
-    </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Heartverse</title>
-  <link rel="icon" href="{% static 'logo.ico' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
   <style type="text/css"> audio { display:none;} </style>
   <style>
     css-doodle {
@@ -74,8 +66,8 @@
     Your browser isn't invited for super fun audio time.
 </audio>
 
-<script src='{% static 'css-doodle.min.js' %}'></script>
-<script src='{% static 'jquery.min.js' %}'></script>
+<script src='{% static 'libs/css-doodle.min.js' %}'></script>
+<script src='{% static 'libs/jquery.min.js' %}'></script>
 <script>
     setInterval(function () {
         let audio = $('.song')[0];
