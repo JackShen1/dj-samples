@@ -1,7 +1,9 @@
 import os
 from django.contrib import admin
+from django.contrib.auth.decorators import login_required
 from django.urls import include, path
 from django.conf.urls import url
+from django.views.generic import TemplateView
 from django.views.static import serve
 from django.contrib.auth import views as auth_views
 
@@ -19,6 +21,7 @@ urlpatterns = [
     path('ads/', include('ads.urls')),
     path('authz/', include('authz.urls')),
     path('chat/', include('chat.urls')),
+    url(r'^home/', login_required(TemplateView.as_view(template_name='home/main.html')), name='home'),
 
     path('concentus/', include('concentus.urls')),
     path('constellation/', include('constellation.urls')),
