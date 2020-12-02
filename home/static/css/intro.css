@@ -345,29 +345,6 @@ body {
   transition-duration: 0.4s;
 }
 
-@font-face { font-family: CandyTime;
-  src: url('../font/CandyTime.ttf'); }
-
-.message {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: 80px;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-  color: #c60600;
-  text-align: center;
-  font-family: CandyTime;}
-
-.snow {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
 
 @media screen  and (min-width: 960px) {
   div.message{

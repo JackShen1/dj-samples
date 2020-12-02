@@ -13,5 +13,5 @@ class HomeView(View):
             'installed': settings.INSTALLED_APPS,
             'islocal': islocal
         }
-        return render(request, 'home/main.html', context)
+        return render(request, 'home/intro.html', context)
 
