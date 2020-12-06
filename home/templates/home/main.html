@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="{% static 'css/xmas-lights.css' %}">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="{% static 'libs/prefixfree.min.js' %}"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
     <div class="heading">
         <div class="logo">
-            <a href="/" target="_self" rel="nofollow" title="JackShen Engineering" class="logo-link">JackShen Engineering</a>
+            <a href="{% url "intro" %}" target="_self" rel="nofollow" title="JackShen Engineering" class="logo-link">JackShen Engineering</a>
         </div>
         <button id="toggle-nav">
             menu

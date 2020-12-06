@@ -397,7 +397,9 @@
         init();
         let audio = $('.song')[0];
         audio.play();
-        setTimeout ("document.location = '{% url "home_page" %}';",  206 * 100)
+        onload = function () {
+            setTimeout ("document.location = '{% url "home_page" %}';",  206 * 100)
+        }
     } else {
         setLoadingStatus('Merry Xmas');
         setTimeout(() => {
