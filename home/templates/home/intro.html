@@ -130,7 +130,7 @@
 
                     <g class="messageText" opacity="0">
                         <text class="merryTextBg " x="50%" y="622">WELCOME TO JACKSHEN WORLD!</text>
-                        <text class="merryText" x="50%" y="620">WELCOME TO JACKSHEN WORLD!</text>
+                        <text class="merryText " x="50%" y="620">WELCOME TO JACKSHEN WORLD!</text>
                         <text class="fromJackText" x="50%" y="670">AND MERRY CHRISTMAS!</text>
                     </g>
                 </g>
@@ -393,13 +393,23 @@
 <script src="{% static 'js/intro.js' %}"></script>
 
 <script>
-    setInterval(function () {
+    if (IS_HEADER) {
+        init();
         let audio = $('.song')[0];
         audio.play();
-    }, 2);
-
-    onload = function () {
         setTimeout ("document.location = '{% url "home_page" %}';",  206 * 100)
+    } else {
+        setLoadingStatus('Merry Xmas');
+        setTimeout(() => {
+            soundManager.preload()
+                .then(
+                    init,
+                    reason => {
+                        init();
+                        return Promise.reject(reason);
+                    }
+                );
+        }, 0);
     }
 </script>
 

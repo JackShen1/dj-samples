@@ -2077,25 +2077,26 @@ const Spark = {
 
 
 // Kick things off.
-
 function setLoadingStatus(status) {
 	document.querySelector('.loading-init__status').textContent = status;
 }
 
-if (IS_HEADER) {
-	init();
-} else {
-	// Allow status to render, then preload assets and start app.
-	setLoadingStatus('Merry Xmas');
-	setTimeout(() => {
-		soundManager.preload()
-		.then(
-			init,
-			reason => {
-				init();
-				// setLoadingStatus('Error Loading Audio');
-				return Promise.reject(reason);
-			}
-		);
-	}, 0);
-}
+// if (IS_HEADER) {
+// 	init();
+// 	let audio = $('.song')[0];
+//         audio.play();
+// } else {
+// 	// Allow status to render, then preload assets and start app.
+// 	setLoadingStatus('Merry Xmas');
+// 	setTimeout(() => {
+// 		soundManager.preload()
+// 		.then(
+// 			init,
+// 			reason => {
+// 				init();
+// 				// setLoadingStatus('Error Loading Audio');
+// 				return Promise.reject(reason);
+// 			}
+// 		);
+// 	}, 0);
+// }
