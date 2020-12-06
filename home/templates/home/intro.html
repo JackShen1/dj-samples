@@ -395,22 +395,17 @@
 <script>
     if (IS_HEADER) {
         init();
-        let audio = $('.song')[0];
-        audio.play();
-        onload = function () {
-            setTimeout ("document.location = '{% url "home_page" %}';",  206 * 100)
-        }
     } else {
         setLoadingStatus('Merry Xmas');
         setTimeout(() => {
-            soundManager.preload()
-                .then(
-                    init,
-                    reason => {
-                        init();
-                        return Promise.reject(reason);
-                    }
-                );
+            soundManager.preload().then(init, reason => {
+                init(); return Promise.reject(reason);
+                });
+            let audio = $('.song')[0];
+            audio.play();
+            setTimeout(() => {
+                document.location = '{% url "home_page" %}'
+            }, 206 * 100)
         }, 0);
     }
 </script>
