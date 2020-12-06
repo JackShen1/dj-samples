@@ -16,8 +16,10 @@ APP_NAME = 'JackShen Engineering'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'mvpxxdk1_bzoyg*@rnf&5zi2^sts9v$0wvia&*r%jxvl)7gnlq')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
-# DEBUG = False
+# DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
+DEBUG = False
+DEBUG_PROPAGATE_EXCEPTIONS = True
+
 ALLOWED_HOSTS = ['jackshen.herokuapp.com', '127.0.0.1']
 
 # Application definition
@@ -156,7 +158,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+COMPRESS_ENABLED = os.environ.get('COMPRESS_ENABLED', False)
 
 # Configure the social login
 try:
@@ -194,7 +198,9 @@ DATABASES['default'].update(db_from_env)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
