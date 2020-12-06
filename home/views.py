@@ -4,6 +4,10 @@ from django.views import View
 from django.conf import settings
 
 
+def error_404(request, exception):
+    return render(request, 'home/404.html')
+
+
 class HomeView(View):
     def get(self, request):
         print(request.get_host())
@@ -13,5 +17,4 @@ class HomeView(View):
             'installed': settings.INSTALLED_APPS,
             'islocal': islocal
         }
-        return render(request, 'home/intro.html', context)
-
+        return render(request, 'home/start.html', context)
