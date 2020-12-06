@@ -16,9 +16,9 @@ APP_NAME = 'JackShen Engineering'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'mvpxxdk1_bzoyg*@rnf&5zi2^sts9v$0wvia&*r%jxvl)7gnlq')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
-DEBUG = False
-DEBUG_PROPAGATE_EXCEPTIONS = True
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
+# DEBUG = False
+# DEBUG_PROPAGATE_EXCEPTIONS = True
 
 ALLOWED_HOSTS = ['jackshen.herokuapp.com', '127.0.0.1']
 
