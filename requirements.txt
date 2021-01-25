@@ -3,6 +3,7 @@ django-crispy-forms>=1.9.2
 django-filter==2.3.0
 djangorestframework>=3.11.1
 django-extensions>=3.0.5
+django-heroku>=0.3.1
 Markdown==3.0.1
 social-auth-app-django>=3.1.0
 social-auth-core>=3.3.3
@@ -13,7 +14,6 @@ gunicorn==19.6.0
 asgiref~=3.2.10
 channels~=2.4.0
 PyJWT~=1.7.1
-cryptography~=3.2.1
 pip~=20.2.4
 wheel~=0.34.2
 pytz~=2019.3
