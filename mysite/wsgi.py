@@ -1,6 +1,7 @@
 import os
 import sys
 
+
 path = os.path.expanduser('~/django_projects/mysite')
 if path not in sys.path:
     sys.path.insert(0, path)
