@@ -9,11 +9,11 @@ social-auth-app-django>=3.1.0
 social-auth-core>=3.3.3
 psycopg2==2.8.6
 whitenoise==5.2.0
-dj-database-url==0.4.1
+dj-database-url==0.5.0
 gunicorn==19.6.0
 asgiref~=3.2.10
 channels~=2.4.0
-PyJWT~=1.7.1
+PyJWT~=2.0.0
 pip~=20.2.4
 wheel~=0.34.2
 pytz~=2019.3
