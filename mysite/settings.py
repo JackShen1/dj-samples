@@ -17,7 +17,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'mvpxxdk1_bzoyg*@rnf&5zi2^sts9v
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = False
-DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
+DEBUG = bool(os.environ.get('DJANGO_DEBUG', False))
 ALLOWED_HOSTS = ['jackshen.herokuapp.com', '127.0.0.1']
 
 # Application definition
@@ -42,19 +42,6 @@ INSTALLED_APPS = [
     'authz.apps.AuthzConfig',
     'ads.apps.AdsConfig',
     'chat.apps.ChatConfig',
-
-    'concentus.apps.ConcentusConfig',
-    'constellation.apps.ConstellationConfig',
-    'expressionism.apps.ExpressionismConfig',
-    'expressionism2.apps.Expressionism2Config',
-    'fractal.apps.FractalConfig',
-    'galaxy.apps.GalaxyConfig',
-    'heartverse.apps.HeartverseConfig',
-    'infinity.apps.InfinityConfig',
-    'neon.apps.NeonConfig',
-    'phoenix.apps.PhoenixConfig',
-    'spirals.apps.SpiralsConfig',
-    'whirlpool.apps.WhirlpoolConfig',
     'xmas-tree.apps.XmasTreeConfig',
 ]
 

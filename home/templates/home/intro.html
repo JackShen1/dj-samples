@@ -9,10 +9,10 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#000000">
-    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'home/ico/logo.ico' %}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'libs/reset.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/intro.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/intro.css' %}">
     <style type="text/css"> audio { display:none;} </style>
 </head>
 
@@ -241,10 +241,10 @@
 <script src="{% static 'libs/TweenMax.min.js' %}"></script>
 <script src="{% static 'libs/ScrubGSAPTimeline.js' %}"></script>
 
-<script src="{% static 'js/fscreen.js' %}"></script>
-<script src="{% static 'js/Stage.js' %}"></script>
-<script src="{% static 'js/MyMath.js' %}"></script>
-<script src="{% static 'js/tree.js' %}"></script>
+<script src="{% static 'home/js/fscreen.js' %}"></script>
+<script src="{% static 'home/js/Stage.js' %}"></script>
+<script src="{% static 'home/js/MyMath.js' %}"></script>
+<script src="{% static 'home/js/tree.js' %}"></script>
 <script>const soundManager = {
 	baseURL: "{% static 'audio/' %}",
 	ctx: new (window.AudioContext || window.webkitAudioContext),
@@ -390,7 +390,7 @@
 	}
 };
 </script>
-<script src="{% static 'js/intro.js' %}"></script>
+<script src="{% static 'home/js/intro.js' %}"></script>
 
 <script>
     if (IS_HEADER) {

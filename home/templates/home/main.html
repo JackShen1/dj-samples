@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>JackShen Engineering</title>
-    <link rel="icon" href="{% static 'ico/logo.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'home/ico/logo.ico' %}" type="image/x-icon">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="{% static 'css/main-style.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/main-style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="{% static 'css/xmas-lights.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/xmas-lights.css' %}">
     <script src="{% static 'libs/prefixfree.min.js' %}"></script>
 </head>
 
@@ -126,7 +126,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../concentus" target="_blank">
+                    <a href="{% url "concentus" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-1'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -147,7 +147,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../constellation" target="_blank">
+                    <a href="{% url "constellation" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-2'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -168,7 +168,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../expressionism" target="_blank">
+                    <a href="{% url "expressionism" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-3'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -189,7 +189,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../expressionism2" target="_blank">
+                    <a href="{% url "expressionism2" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-4'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -210,7 +210,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../fractal" target="_blank">
+                    <a href="{% url "fractal" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-5'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -231,7 +231,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../galaxy" target="_blank">
+                    <a href="{% url "galaxy" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-6'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -252,7 +252,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../heartverse" target="_blank">
+                    <a href="{% url "heartverse" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-7'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -273,7 +273,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../infinity" target="_blank">
+                    <a href="{% url "infinity" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-8'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -294,7 +294,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../neon" target="_blank">
+                    <a href="{% url "neon" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-9'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -315,7 +315,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../phoenix" target="_blank">
+                    <a href="{% url "phoenix" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-10'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -336,7 +336,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../spirals" target="_blank">
+                    <a href="{% url "spirals" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-11'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -357,7 +357,7 @@
 
             <div class='item'>
                 <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
-                    <a href="../whirlpool" target="_blank">
+                    <a href="{% url "whirlpool" %}" target="_blank">
                         <defs>
                             <clipPath id='clip-12'>
                                 <circle cx='0' cy='0' fill='#000' r='150px'></circle>
@@ -380,8 +380,8 @@
 </div>
 
 <script src="{% static 'libs/jquery1-7-1.min.js' %}" type="text/javascript"></script>
-<script src="{% static 'js/snowstorm.js' %}"></script>
-<script src="{% static 'js/main_script.js' %}"></script>
+<script src="{% static 'home/js/snowstorm.js' %}"></script>
+<script src="{% static 'home/js/main_script.js' %}"></script>
 
 </body>
 </html>
