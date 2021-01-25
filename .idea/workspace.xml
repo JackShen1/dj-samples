@@ -2,6 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b15cee2-4773-4f24-96ff-a295b29d4288" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dj-samples.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chat/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/concentus/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/concentus/apps.py" beforeDir="false" />
@@ -39,7 +47,7 @@
       <change beforePath="$PROJECT_DIR$/fractal/static/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fractal/static/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fractal/static/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/templates/fractal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/concentus/fractal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fractal/templates/fractal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/fractal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fractal/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/galaxy/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/galaxy/apps.py" beforeDir="false" />
@@ -127,6 +135,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -192,7 +203,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611591752486</updated>
-      <workItem from="1611591753532" duration="4518000" />
+      <workItem from="1611591753532" duration="4872000" />
     </task>
     <servers />
   </component>
@@ -200,22 +211,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1611597188152">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1611599949362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611597188152" />
-    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1611597188152">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
+    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1611599949362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611597188152" />
-    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1611597188152">
+    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
+    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1611599949362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611597188152" />
-    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1611597188152">
+    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1611599949362">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611597188152" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611592616917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
