@@ -1,6 +1,7 @@
 from pathlib import Path
 import dj_database_url
 import os
+import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -192,3 +193,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+django_heroku.settings(locals())
