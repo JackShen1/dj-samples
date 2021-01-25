@@ -2,133 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b15cee2-4773-4f24-96ff-a295b29d4288" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dj-samples.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Django_Lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/chat/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/static/concentus.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/concentus/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/static/concentus.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/concentus/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/static/maytherumbewithyou.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/audio/maytherumbewithyou.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/templates/concentus/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/concentus/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/concentus/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/static/constellation.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/constellation/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/templates/constellation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/constellation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constellation/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/static/expressionism.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/expressionism/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/static/expressionism.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/expressionism/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/templates/expressionism/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/expressionism/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/static/expressionism2.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/expressionism2/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/static/expressionism2.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/expressionism2/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/templates/expressionism2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/expressionism2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expressionism2/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/static/fractal.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/static/fractal.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/static/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/static/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/static/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/fractal/img/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/templates/fractal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/fractal/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fractal/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/static/galaxy.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/galaxy/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/static/galaxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/galaxy/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/static/interstellar.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/audio/interstellar.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/templates/galaxy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/galaxy/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galaxy/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/static/heartverse.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/heartverse/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/static/music.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/audio/careless_whisper.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/templates/heartverse/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/heartverse/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heartverse/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/404.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/404.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/main-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/main-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/start.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/start.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/css/xmas-lights.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/css/xmas-lights.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/font/GrinchedRegular.otf" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/font/GrinchedRegular.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/ico/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/ico/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/ico/logo.ico" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/ico/logo.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/MyMath.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/MyMath.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/Stage.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/Stage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/fscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/fscreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/intro.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/intro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/main_script.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/main_script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/snow.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/snow.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/snowstorm.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/snowstorm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/home/js/tree.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/base_bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/base_bootstrap.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/start.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/start.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/registration/login_social.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/registration/login_social.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/static/infinity.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/infinity/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/templates/infinity/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/infinity/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infinity/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/static/neon.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/neon/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/static/neon.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/neon/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/templates/neon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/neon/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neon/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/static/phoenix.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/phoenix/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/templates/phoenix/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/phoenix/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phoenix/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/static/spirals.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/spirals/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/static/spirals.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/spirals/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/templates/spirals/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/spirals/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spirals/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/static/whirlpool.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/whirlpool/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/static/whirlpool.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/whirlpool/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/templates/whirlpool/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/whirlpool/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whirlpool/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/intro.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/intro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-firework/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-firework/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-game/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-scene/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/xmas-tree/templates/xmas-tree/xmas-scene/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611591752486</updated>
-      <workItem from="1611591753532" duration="4872000" />
+      <workItem from="1611591753532" duration="7696000" />
     </task>
     <servers />
   </component>
@@ -211,22 +87,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1611599949362">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom" timestamp="1611602802576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
-    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1611599949362">
+    <state width="1537" height="218" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611602802576" />
+    <state width="1537" height="218" key="GridCell.Tab.0.center" timestamp="1611602802575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
-    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1611599949362">
+    <state width="1537" height="218" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611602802575" />
+    <state width="1537" height="218" key="GridCell.Tab.0.left" timestamp="1611602802575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
-    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1611599949362">
+    <state width="1537" height="218" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611602802575" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right" timestamp="1611602802576">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611599949362" />
+    <state width="1537" height="218" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611602802576" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1611592616917">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
