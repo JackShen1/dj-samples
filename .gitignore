@@ -133,3 +133,6 @@ dmypy.json
 
 #Database
 *.sqlite3
+
+# See the name for you IDE
+.idea
