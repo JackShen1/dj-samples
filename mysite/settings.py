@@ -147,11 +147,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATIC_URL = '/static/'
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
+STATIC_URL = STATIC_HOST + '/static/'
 
 # configuring the location for media
 MEDIA_URL = '/media/'
