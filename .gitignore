@@ -131,7 +131,7 @@ dmypy.json
 # Text backup files
 *.bak
 
-#Database
+# Database
 *.sqlite3
 
 # See the name for you IDE
